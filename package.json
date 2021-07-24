@@ -1,0 +1,21 @@
+{
+  "name": "miledown-demo",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "dependencies": {
+    "@milkdown/core": "^4.6.7",
+    "@milkdown/preset-commonmark": "^4.6.7",
+    "@milkdown/theme-nord": "^4.6.7",
+    "@milkdown/vue": "^4.6.7",
+    "vue": "^3.0.5"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^1.2.5",
+    "@vue/compiler-sfc": "^3.0.5",
+    "vite": "^2.4.3"
+  }
+}
