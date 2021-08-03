@@ -7,15 +7,18 @@
     "serve": "vite preview"
   },
   "dependencies": {
-    "@milkdown/core": "^4.6.7",
-    "@milkdown/preset-commonmark": "^4.6.7",
-    "@milkdown/theme-nord": "^4.6.7",
-    "@milkdown/vue": "^4.6.7",
+    "@milkdown/core": "^4.6.9",
+    "@milkdown/plugin-listener": "^4.6.9",
+    "@milkdown/preset-commonmark": "^4.6.9",
+    "@milkdown/theme-nord": "^4.6.9",
+    "@milkdown/vue": "^4.6.9",
     "vue": "^3.0.5"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^1.2.5",
+    "@vitejs/plugin-vue": "^1.3.0",
+    "@vitejs/plugin-vue-jsx": "^1.1.7",
     "@vue/compiler-sfc": "^3.0.5",
-    "vite": "^2.4.3"
+    "sass": "^1.36.0",
+    "vite": "^2.4.4"
   }
 }
