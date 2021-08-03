@@ -9,6 +9,7 @@
   "dependencies": {
     "@milkdown/core": "^4.6.9",
     "@milkdown/plugin-listener": "^4.6.9",
+    "@milkdown/plugin-prism": "^4.7.1",
     "@milkdown/preset-commonmark": "^4.6.9",
     "@milkdown/theme-nord": "^4.6.9",
     "@milkdown/vue": "^4.6.9",
