@@ -1,6 +1,5 @@
 <template>
   <div class="content">
-
     <MilkdownTestEditor />
   </div>
 </template>

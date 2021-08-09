@@ -1,6 +1,6 @@
 <template>
-  <Test />
-  <!-- <EditPage /> -->
+  <!-- <Test /> -->
+  <EditPage />
 </template>
 
 <script lang="ts">
