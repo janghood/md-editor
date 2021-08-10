@@ -1,7 +1,7 @@
 /*
  * @Author: 望海潮
  * @Date: 2021-07-28 09:03:18
- * @LastEditTime: 2021-08-07 11:03:36
+ * @LastEditTime: 2021-08-10 10:50:57
  * @Description:
  */
 import { defineComponent } from 'vue';
@@ -9,7 +9,6 @@ import { Editor, rootCtx, defaultValueCtx, editorViewOptionsCtx } from '@milkdow
 import { VueEditor, useEditor } from '@milkdown/vue';
 // import { commonmark } from '@milkdown/preset-commonmark';
 import { prism } from '@milkdown/plugin-prism';
-import axios from 'axios';
 
 
 // 监听

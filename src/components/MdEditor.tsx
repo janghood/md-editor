@@ -1,7 +1,7 @@
 /*
  * @Author: 望海潮
  * @Date: 2021-07-24 13:09:26
- * @LastEditTime: 2021-08-09 17:33:20
+ * @LastEditTime: 2021-08-10 10:50:49
  * @Description: 
  */
 import { defineComponent, h } from 'vue';
@@ -9,8 +9,6 @@ import { Editor, rootCtx, defaultValueCtx, editorViewOptionsCtx } from '@milkdow
 import { listener, listenerCtx } from '@milkdown/plugin-listener';
 import { VueEditor, useEditor } from '@milkdown/vue';
 import { prism } from '@milkdown/plugin-prism';
-import { ElUpload } from 'element-plus';
-import axios from 'axios';
 
 import { emoji } from '@milkdown/plugin-emoji';
 import { clipboard } from '@milkdown/plugin-clipboard';
@@ -66,25 +64,9 @@ export default defineComponent({
           return editor;
       }
     );
-
-    // const handleUpload = async (e) => {
-    //   let formData = new FormData();
-    //   formData.append('file', e.file, e.file.name);
-    //   const res = await axios.post(
-    //     '/api/file/upload/tmp', formData
-    //   );
-    //   console.log(res);
-    // }
-
     const mdEditor = h( 
       <VueEditor editor={editor} />
     );
-
-    // const upLoad = h(
-    //   <ElUpload http-request={handleUpload} class="upload-demo" action="#">
-    //     <el-button size="small" type="primary">点击上传</el-button>
-    //   </ElUpload>
-    // )
 
     return h(
       <>
