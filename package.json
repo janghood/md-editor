@@ -20,8 +20,6 @@
     "@milkdown/preset-gfm": "^4.8.2",
     "@milkdown/theme-nord": "^4.8.2",
     "@milkdown/vue": "^4.8.2",
-    "axios": "^0.21.1",
-    "element-plus": "^1.0.2-beta.70",
     "vue": "^3.0.5"
   },
   "devDependencies": {
