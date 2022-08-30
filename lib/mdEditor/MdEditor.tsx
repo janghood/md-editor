@@ -25,7 +25,7 @@ import { createTheme } from "./janghoodTheme";
 export default defineComponent({
   name: 'MdEditor',
   props: {
-    content: { type: String, default: '' },
+    modelValue: { type: String, default: '' },
     placeholder: { type: String, default: '请输入...' },
     readonly: { type: Boolean, default: false },
     options: {
@@ -54,7 +54,7 @@ export default defineComponent({
             ctx.set(defaultValueCtx, defaultValue);
             ctx.set(editorViewOptionsCtx, { editable: () => !readonly });
             ctx.get(listenerCtx).markdownUpdated((c, markdown) => {
-              emit('update:content', markdown);
+              emit('update:modelValue', markdown);
             })
           })
           .use(themeFactory((emotion, manager) =>
@@ -125,7 +125,7 @@ export default defineComponent({
 
       const { editor } = useEditor(
         (root) => {
-          return createEditor(root, props.content, props.readonly)
+          return createEditor(root, props.modelValue, props.readonly)
         }
       );
 
