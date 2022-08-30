@@ -1,18 +1,12 @@
 <template>
   <div class="content">
-    <MdEditor v-model:content="article" :readOnly="false"/>
+    <MdEditor v-model:content="article" :readOnly="false" :options="{}"/>
     <button @click="handleSaveArticle">save</button>
   </div>
 </template>
 
 <script lang="ts">
-/*
- * @Author: 望海潮
- * @Date: 2021-07-28 08:36:48
- * @LastEditTime: 2021-08-08 00:31:50
- * @Description: 
- */
-import { defineComponent } from "@vue/runtime-core";
+import { defineComponent } from "vue";
 import demo from '../md/demo.md';
 
 export default defineComponent({
