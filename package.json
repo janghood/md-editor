@@ -9,6 +9,7 @@
     "types",
     "web-types.json"
   ],
+  "types": "types/md-editor.d.ts",
   "main": "./dist/md-editor.umd.js",
   "module": "./dist/md-editor.mjs",
   "exports": {
