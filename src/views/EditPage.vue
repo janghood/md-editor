@@ -1,32 +1,28 @@
 <template>
   <div class="content">
-    <MMdEditor v-model="article" :readOnly="false" :options="{}"/>
     <button @click="handleSaveArticle">save</button>
+    <button @click="modifyArticle">modify</button>
+    <MMdEditor v-model="article" :readOnly="false" :options="{}"/>
   </div>
 </template>
 
-<script lang="ts">
-import { defineComponent } from "vue";
+<script setup lang="ts">
+import { ref, watch } from "vue";
 import demo from '../md/demo.md';
 
-export default defineComponent({
-  name: 'EditPage',
-  data() {
-    return {
-      article: demo
-    }
-  },
-  watch: {
-    article() {
-      console.log(this.article);
-    }
-  },
-  methods: {
-    handleSaveArticle() {
-      console.log(this.article);
-    }
-  }
+const article = ref(demo);
+
+watch(() => article, () => {
+  console.log(article.value);
 })
+
+const handleSaveArticle = () => {
+  console.log(article.value);
+}
+
+const modifyArticle = () => {
+  article.value = 'hello world';
+}
 </script>
 
 <style>
