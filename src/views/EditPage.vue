@@ -2,6 +2,7 @@
   <div class="content">
     <button @click="handleSaveArticle">save</button>
     <button @click="modifyArticle">modify</button>
+    <span>{{article}}</span>
     <MMdEditor v-model="article" :readOnly="false" :options="{}"/>
   </div>
 </template>
