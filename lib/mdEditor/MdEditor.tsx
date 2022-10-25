@@ -21,25 +21,11 @@ import { diagram } from '@milkdown/plugin-diagram';
 import 'katex/dist/katex.min.css';
 import './index.scss';
 import { createTheme } from "./janghoodTheme";
+import { props } from "./props";
 
 export default defineComponent({
   name: 'MdEditor',
-  props: {
-    modelValue: { type: String, default: '' },
-    placeholder: { type: String, default: '请输入...' },
-    readonly: { type: Boolean, default: false },
-    options: {
-      type: Object, default: () => ({
-        clipboard: true,
-        history: true,
-        prism: true,
-        emoji: true,
-        tooltip: true,
-        math: true,
-        diagram: true,
-      })
-    }
-  },
+  props,
   setup(props, { emit }) {
 
     return () => {
