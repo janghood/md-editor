@@ -1,7 +1,7 @@
 {
   "name": "@janghood/md-editor",
   "author": "望海潮",
-  "version": "0.1.4",
+  "version": "0.2.0-0",
   "files": [
     "dist",
     "lib",
@@ -52,6 +52,7 @@
     "@vue/compiler-sfc": "^3.2.41",
     "katex": "^0.16.3",
     "mermaid": "^9.1.7",
+    "prosemirror-model": "^1.18.1",
     "sass": "^1.55.0",
     "typescript": "^4.8.4",
     "vite": "^3.1.8",
