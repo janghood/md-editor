@@ -2,13 +2,13 @@
  * @Author: 望海潮
  * @Date: 2021-08-20 17:08:02
  * @LastEditTime: 2021-08-22 22:43:35
- * @Description: 
+ * @Description:
  */
 import { App } from 'vue';
-import { default as MdEditor } from './mdEditor';
+import { default as MMdEditor } from './mdEditor';
 
 const components = [
-  MdEditor
+  MMdEditor
 ];
 
 const install = function (app: App) {
@@ -19,7 +19,7 @@ const install = function (app: App) {
 };
 
 export {
-  MdEditor
+  MMdEditor
 }
 
 export const createMdEditor = () => {

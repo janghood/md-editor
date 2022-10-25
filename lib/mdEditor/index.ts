@@ -2,9 +2,9 @@
  * @Author: 望海潮
  * @Date: 2021-08-18 09:24:50
  * @LastEditTime: 2021-08-22 22:56:26
- * @Description: 
+ * @Description:
  */
 import { withInstall } from "../_utils/install";
-import MdEditor from "./MdEditor";
+import MMdEditor from "./MMdEditor";
 
-export default withInstall(MdEditor);
+export default withInstall(MMdEditor);

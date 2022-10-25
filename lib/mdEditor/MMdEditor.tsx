@@ -24,7 +24,7 @@ import { createTheme } from "./janghoodTheme";
 import { props } from "./props";
 
 export default defineComponent({
-  name: 'MdEditor',
+  name: 'MMdEditor',
   props,
   setup(props, { emit }) {
 
@@ -116,7 +116,7 @@ export default defineComponent({
       );
 
       return h(
-        <VueEditor class="janghood-md" editor={editor}/>
+        <VueEditor class="m-md-editor" editor={editor}/>
       )
     }
   }

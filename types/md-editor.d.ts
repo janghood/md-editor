@@ -7,10 +7,10 @@
  * 江湖的业务千篇一律，复杂的代码好几百行。
  */
 
-import editor from '../lib/mdEditor/MdEditor';
+import editor from '../lib/mdEditor/MMdEditor';
 import { App } from "vue";
 
-export declare const MdEditor: typeof editor;
+export declare const MMdEditor: typeof editor;
 
 export interface JanghoodMdEditor {
   install: (app: App) => App;

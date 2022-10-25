@@ -13,7 +13,7 @@ const firstUpperCase = (str: string) => {
 }
 
 const sourceSymbolTranslator = (dirList: string[]) => {
-  return firstUpperCase(dirList[dirList.length - 1]);
+  return `M${firstUpperCase(dirList[dirList.length - 1])}`;
 }
 
 export default defineJhConfig({

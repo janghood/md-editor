@@ -1,6 +1,6 @@
 <template>
   <div class="content">
-    <MdEditor v-model="article" :readOnly="false" :options="{}"/>
+    <MMdEditor v-model="article" :readOnly="false" :options="{}"/>
     <button @click="handleSaveArticle">save</button>
   </div>
 </template>
