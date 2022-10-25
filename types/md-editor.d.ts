@@ -16,4 +16,4 @@ export interface JanghoodMdEditor {
   install: (app: App) => App;
 }
 
-export function createMdEditor(): JanghoodMdEditor
+export function createMMdEditor(): JanghoodMdEditor

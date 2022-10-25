@@ -22,7 +22,7 @@ export {
   MMdEditor
 }
 
-export const createMdEditor = () => {
+export const createMMdEditor = () => {
   return {
     install
   }
