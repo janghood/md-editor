@@ -1,7 +1,7 @@
 {
   "name": "@janghood/md-editor",
   "author": "望海潮",
-  "version": "0.1.1-1",
+  "version": "0.1.2",
   "files": [
     "dist",
     "lib",
