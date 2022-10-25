@@ -11,19 +11,17 @@ const components = [
   MMdEditor
 ];
 
-const install = function (app: App) {
-  components.forEach(component => {
-    app.use(component);
-  });
-  return app;
-};
-
 export {
   MMdEditor
 }
 
-export const createMMdEditor = () => {
+export function createMMdEditor() {
   return {
-    install
+    install: (app: App) => {
+      components.forEach(component => {
+        app.use(component);
+      });
+      return app;
+    }
   }
 }
