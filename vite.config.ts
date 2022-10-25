@@ -9,27 +9,19 @@ import vue from '@vitejs/plugin-vue'
 import vueJsx from '@vitejs/plugin-vue-jsx'
 import { markdownPlugin } from './markdown-plugin';
 
-export default defineConfig((configEnv: ConfigEnv) => {
-  const { mode } = configEnv;
-  let build: any = {};
-  if (mode === 'npm') {
-    build = {
-      lib: {
-        name: 'md-editor',
-        entry: 'lib/index.ts'
-      },
-      rollupOptions: {
-        external: ['vue']
-      }
-    };
-  }
-
-  return {
-    build,
-    plugins: [vue(), vueJsx(), markdownPlugin()],
-    esbuild: {
-      jsxFactory: 'h',
-      jsxFragment: 'Fragment'
+export default defineConfig({
+  build: {
+    lib: {
+      name: 'md-editor',
+      entry: 'lib/index.ts'
+    },
+    rollupOptions: {
+      external: ['vue']
     }
+  },
+  plugins: [vue(), vueJsx(), markdownPlugin()],
+  esbuild: {
+    jsxFactory: 'h',
+    jsxFragment: 'Fragment'
   }
 })
