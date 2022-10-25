@@ -4,7 +4,7 @@
  * @date 2022/10/25 23:14
  * @version v1.0.0
  *
- * @name md-editor
+ * @name m-md-editor
  * @description janghood markdown editor
  *              水墨组件配色的markdown编辑器
  * @docUrl https://shuimo.janghood.com
