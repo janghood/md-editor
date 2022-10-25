@@ -5,7 +5,9 @@
   "files": [
     "dist",
     "lib",
-    "README"
+    "README",
+    "types",
+    "web-types.json"
   ],
   "main": "./dist/md-editor.umd.js",
   "module": "./dist/md-editor.mjs",
